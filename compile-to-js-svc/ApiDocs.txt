@@ -1,0 +1,31 @@
+
+/ POST 
+	Takes an input JSON object containing a "lang" field and
+	a "text" field. The lang field may contain any of the
+	languages specified in Fig 1. The text field holds source
+	code in the specified language. The format defaults to JSON.
+
+	The request will return an object in the specified format.
+	The object will have contain a "text" field with the generated
+	javascript code, an "output" field containing any output generated
+	by the build process, and a "success" containing "true" if compilation
+	succeeded and "false" if it did not.
+
+Fig 1: Accepted Languages (Case Independant)
+	C++
+	C++14
+	C++1z
+	C++11
+	C++98
+	C89
+	C99
+	C11
+	Java
+	Objective-C++
+	Objective-C
+	Haskell
+	CoffeeScript
+	TypeScript
+	COBOL
+	Scheme
+	Ruby
